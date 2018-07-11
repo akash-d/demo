@@ -1,0 +1,17 @@
+// Variables
+@import "_variables.scss";
+
+// Common styles
+@import "_common.scss";
+
+// Partials
+@import "partials/_header.scss";
+@import "partials/_sidemenu.scss";
+
+// Pages
+@import "pages/_dashboard.scss";
+
+// Responsive and browser specific
+
+// @import "_responsive.scss";
+// @import "_crossbrowser.scss";

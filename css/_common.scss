@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+// Headings, paragraph and anchor tags
+
+h1 {
+    font-size: $largeFont;
+    color: $blackText;
+}
+
+h2 {
+    font-size: $largeFont-4;
+    color: $blackText;
+}
+
+p {
+    font-size: $smallFont+2;
+    color: $textColor;
+}
+
+a {
+    font-size: $anchorTagColor;
+    text-decoration: none;
+}
+
+// Padding between sections
+
+.section-default-padding {
+    padding: $largePadding 0;
+}
+
+.section-less-padding {
+    padding: $lesspadding 0;
+}
+
+.section-bottom-padding {
+    padding-bottom: $lesspadding;
+}
+
+.section-top-padding {
+    padding-top: $lesspadding;
+}
+
+// Border and border radius
+
+.border-all {
+    border: 1px solid $borderColor;
+}
+
+.border-bottom {
+    border-bottom: 1px solid $borderColor;
+}
+
+.border-top {
+    border-top: 1px solid $borderColor;
+}
+
+.border-right {
+    border-right: 1px solid $borderColor;
+}
+
+.border-left {
+    border-left: 1px solid $borderColor;
+}
+
+// Common styles for buttons and button states
+
+.button {
+    padding: 15px 10px;
+    min-width: 50px;
+    font-size: $buttonFontSize;
+    outline: none;
+    box-shadow: none;
+}
+
+.button-danger {
+    background-color: $dangerColor;
+    color: $whiteColor;
+}
+
+.button-warning {
+    background-color: $warningColor;
+    color: $whiteColor;
+}
+
+.button-large {
+    padding: 25px;
+}
+
+.button-small {
+    padding: 10px;
+    min-width: 30px;
+}
+
