@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- tde above 3 meta tags *must* come first in tde head; any otder head content must come *after* tdese tags -->
+    <title>Huawei Dashboard Design</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="">Logo</a>
+                </div>
+
+                <!-- Collect tde nav links, forms, and otder content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/user.png" alt="">
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Setting</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="box">
+                        <ul class="clearfix">
+                            <li>
+                               <a href=""> Dashboard</a>
+                            </li>
+                            <li class="active">
+                               <a href=""> Cluster
+                                    <img class="pull-right mar-top" src="images/play-symbol.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="node-cl-1">
+                        <h3>Cluster (3)</h3>
+                        <table>
+                            <tr>
+                                <th>ID</th>
+                                <th>Node Host</th>
+                                <th>Host</th>
+                                <th>Port</th>
+                                <th>Database</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr class="background">
+                                <td>
+                                    <a href="">N1</a>
+                                </td>
+                                <td>
+                                    <a href="">Node count</a>
+                                </td>
+                                <td>
+                                    <a href="">10.12.13.14</a>
+                                </td>
+                                <td>
+                                    <a href="">5050</a>
+                                </td>
+                                <td>
+                                    <a href="">Postgres</a>
+                                </td>
+                                <td class="progress-bar">
+                                    <p class="success"></p>
+                                </td>
+                            </tr>
+                            <tr class="background">
+                                <td>
+                                    <a href="">N1</a>
+                                </td>
+                                <td>
+                                    <a href="">Node count</a>
+                                </td>
+                                <td>
+                                    <a href="">10.12.13.14</a>
+                                </td>
+                                <td>
+                                    <a href="">5050</a>
+                                </td>
+                                <td>
+                                    <a href="">Postgres</a>
+                                </td>
+                                <td class="progress-bar">
+                                    <p class="danger"></p>
+                                </td>
+                            </tr>
+                            <tr class="background">
+                                <td>
+                                    <a href="">N1</a>
+                                </td>
+                                <td>
+                                    <a href="">Node count</a>
+                                </td>
+                                <td>
+                                    <a href="">10.12.13.14</a>
+                                </td>
+                                <td>
+                                    <a href="">5050</a>
+                                </td>
+                                <td>
+                                    <a href="">Postgres</a>
+                                </td>
+                                <td class="progress-bar">
+                                    <p class="warning"></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

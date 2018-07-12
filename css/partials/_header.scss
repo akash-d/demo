@@ -1,1 +1,15 @@
-// Header specific styles
+.navbar-default{
+    background-color: #141414;
+    border-color: #141414;
+    border-radius: 0;
+    .navbar-brand{
+        font-size: 26px;
+        color: $whiteColor;
+        &:hover{
+            color: $whiteColor;
+        }
+    }
+    &.navbar{
+        margin-bottom: 0;
+    }
+}
