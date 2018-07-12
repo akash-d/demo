@@ -106,7 +106,6 @@
                 font-weight: bold;
             }
             .graph {
-                border: 1px solid;
                 height: 120px;
             }
             .export-value {
@@ -201,6 +200,11 @@
         .graph {
             background-color: $whiteColor;
             height: 350px;
+            padding: 20px;
+            #chartdiv {
+                width	: 100%;
+                height	: 320px;
+            }			
         }
     }
 }
