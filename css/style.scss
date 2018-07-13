@@ -1,19 +1,16 @@
+// font import
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 // Variables
 @import "_variables.scss";
-
 // Common styles
 @import "_common.scss";
-
 // Partials
 @import "partials/_header.scss";
 @import "partials/_sidemenu.scss";
-
 // Pages
 @import "pages/_dashboard.scss";
 @import "pages/_cluster";
 @import "pages/_nodeinfo.scss";
-
 // Responsive and browser specific
-
 // @import "_responsive.scss";
 // @import "_crossbrowser.scss";

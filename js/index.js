@@ -1,5 +1,5 @@
 //canvas chart
-window.onload = function () {
+window.onload = function() {
 
     var areaChart = new CanvasJS.Chart("chartContainer", {
         animationEnabled: true,
@@ -8,47 +8,47 @@ window.onload = function () {
             valueFormatString: "hh:00",
             labelAngle: 0
         },
-       
+
         data: [{
             type: "line",
             markerType: "none",
             dataPoints: [{
-                    x: new Date(Date.UTC (2012, 01, 1, 1,0) ),
+                    x: new Date(Date.UTC(2012, 01, 1, 1, 0)),
                     y: 0,
                     label: ""
                 },
                 {
-                    x: new Date( Date.UTC (2012, 01, 1,2,0) ),
+                    x: new Date(Date.UTC(2012, 01, 1, 2, 0)),
                     y: 20,
                     label: ""
                 },
                 {
-                    x: new Date( Date.UTC(2012, 01, 1,3,0) ),
+                    x: new Date(Date.UTC(2012, 01, 1, 3, 0)),
                     y: 15,
                     label: ""
                 },
                 {
-                    x: new Date( Date.UTC(2012, 01, 1,4,0) ),
+                    x: new Date(Date.UTC(2012, 01, 1, 4, 0)),
                     y: 20,
                     label: ""
                 },
                 {
-                    x: new Date( Date.UTC(2012, 01, 1,5,0) ),
+                    x: new Date(Date.UTC(2012, 01, 1, 5, 0)),
                     y: 10,
                     label: ""
                 },
                 {
-                    x: new Date( Date.UTC(2012, 01, 1,6,0) ),
+                    x: new Date(Date.UTC(2012, 01, 1, 6, 0)),
                     y: 0,
                     label: ""
                 },
                 {
-                    x: new Date( Date.UTC(2012, 01, 1,7,0) ),
+                    x: new Date(Date.UTC(2012, 01, 1, 7, 0)),
                     y: 30,
                     label: ""
                 },
                 {
-                    x: new Date( Date.UTC(2012, 01, 1,8,0) ),
+                    x: new Date(Date.UTC(2012, 01, 1, 8, 0)),
                     y: 0,
                     label: ""
                 },
@@ -64,7 +64,7 @@ window.onload = function () {
             valueFormatString: "hh:00",
             labelAngle: 0
         },
-        axisY:{
+        axisY: {
             gridThickness: 0,
         },
         data: [{
@@ -74,45 +74,45 @@ window.onload = function () {
             dataPoints: [{
                     x: new Date(2015, 02, 1),
                     y: 74.4,
-                   
+
                 },
                 {
                     x: new Date(2015, 05, 1),
                     y: 61.1,
-                   
+
                 },
                 {
                     x: new Date(2015, 08, 1),
                     y: 47.0,
-                    
+
                 },
                 {
                     x: new Date(2015, 11, 1),
                     y: 48.0,
-                    
+
                 },
                 {
                     x: new Date(2016, 02, 1),
                     y: 74.8,
-                    
+
                 },
                 {
                     x: new Date(2016, 05, 1),
                     y: 51.1,
-                   
+
                 },
                 {
                     x: new Date(2016, 08, 1),
                     y: 40.4,
-                    
+
                 },
                 {
                     x: new Date(2016, 11, 1),
                     y: 45.5,
-                    
+
                 },
-                
-                
+
+
             ]
         }]
     });
@@ -136,7 +136,7 @@ window.onload = function () {
     var updateInterval1 = 2500;
     var dataLength1 = 50; // number of dataPoints visible at any point
 
-    var updateChart1 = function (count) {
+    var updateChart1 = function(count) {
         count = count || 1;
         // count is number of times loop runs to generate random dataPoints.
         for (var j = 0; j < count; j++) {
@@ -154,7 +154,7 @@ window.onload = function () {
     };
 
     updateChart1(dataLength1);
-    setInterval(function () {
+    setInterval(function() {
         updateChart1()
     }, updateInterval1);
     //chart3ends
@@ -176,7 +176,7 @@ window.onload = function () {
     var updateInterval2 = 1500;
     var dataLength2 = 50; // number of dataPoints visible at any point
 
-    var updateChart2 = function (count) {
+    var updateChart2 = function(count) {
         count = count || 1;
         // count is number of times loop runs to generate random dataPoints.
         for (var j = 0; j < count; j++) {
@@ -194,7 +194,7 @@ window.onload = function () {
     };
 
     updateChart2(dataLength2);
-    setInterval(function () {
+    setInterval(function() {
         updateChart2()
     }, updateInterval2);
     //chart4
@@ -217,7 +217,7 @@ window.onload = function () {
     var updateInterval = 1500;
     var dataLength = 50; // number of dataPoints visible at any point
 
-    var updateChart = function (count) {
+    var updateChart = function(count) {
         count = count || 1;
         // count is number of times loop runs to generate random dataPoints.
         for (var j = 0; j < count; j++) {
@@ -235,15 +235,15 @@ window.onload = function () {
     };
 
     updateChart(dataLength);
-    setInterval(function () {
+    setInterval(function() {
         updateChart()
     }, updateInterval);
 
-    $('.primary-table tr').click(function(){
+    $('.primary-table tr').click(function() {
         $('.primary-table tr').removeClass('active');
         $(this).addClass('active');
     });
 
-    var minHeight = window.innerHeight -63;
-    $('.section2').css('min-height',minHeight);
+    var minHeight = window.innerHeight - 63;
+    $('.section-padding').css('min-height', minHeight);
 }

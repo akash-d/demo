@@ -1,32 +1,51 @@
-* {
-    box-sizing: border-box;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 // Headings, paragraph and anchor tags
-
-h1 {
-    font-size: $largeFont;
-    color: $blackText;
-}
-
 h2 {
     font-size: $largeFont;
+    font-weight: 700;
     color: $blackText;
+    margin: 0;
+}
+
+h3 {
+    font-size: $mediumFont;
+    color: $blackText;
+    margin: 0 0 15px;
+}
+
+h4 {
+    font-size: $mediumFont - 4;
+    color: $blackText;
+    margin: 0;
+}
+
+h5 {
+    font-size: $smallFont + 2;
+    color: $blackText;
+    margin: 0;
 }
 
 p {
-    font-size: $smallFont+2;
+    font-size: $smallFont + 2;
     color: $textColor;
 }
 
 a {
-    font-size: $anchorTagColor;
+    color: $anchorTagColor;
     text-decoration: none;
+    font-size: $smallFont + 2;
+}
+
+span {
+    font-size: $smallFont;
+    color: $textColor;
 }
 
 // Padding between sections
-
-.section-default-padding {
+.section-padding {
     padding: $largePadding 0;
 }
 
@@ -43,7 +62,6 @@ a {
 }
 
 // Border and border radius
-
 .border-all {
     border: 1px solid $borderColor;
 }
@@ -65,31 +83,53 @@ a {
 }
 
 // Common styles for buttons and button states
-
-.button {
-    padding: 15px 10px;
+.btn {
+    padding: 8px 15px;
     min-width: 50px;
     font-size: $buttonFontSize;
     outline: none;
     box-shadow: none;
 }
 
-.button-danger {
-    background-color: $dangerColor;
+.btn-primary {
+    background-color: $btnPrimary;
     color: $whiteColor;
+    border-color: $btnPrimary;
 }
 
-.button-warning {
-    background-color: $warningColor;
-    color: $whiteColor;
+.btn-outline {
+    background-color: $whiteColor;
+    border: 1px solid $btnPrimary;
+    color: $btnPrimary
 }
 
-.button-large {
-    padding: 25px;
+.pos-abs {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
-.button-small {
-    padding: 10px;
-    min-width: 30px;
+.light-grey-bg {
+    background-color: $greyBackgroundColor;
 }
 
+.box {
+    box-shadow: $boxShadow;
+    border-radius: $borderRadius;
+    padding: $lesspadding - 5;
+    &.white-bg {
+        background-color: $whiteColor;
+    }
+}
+
+.primary-table {
+    width: 100%;
+    border: 1px solid $borderColor;
+}
+
+.pad-btm-40 {
+    padding-bottom: 40px;
+}

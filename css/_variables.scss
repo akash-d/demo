@@ -1,29 +1,23 @@
 // Color codes used across website
-
-$primaryColor:rgb(245, 160, 91);
+$primaryColor:#d0021b;
 $whiteColor:#fff;
-$borderColor:grey;
-$anchorTagColor: rgb(19, 19, 87);
-$textColor:grey;
-$blackText:#000;
-$successColor:green;
-$dangerColor:red;
-$warningColor:yellow;
-$primaryblue:#337ab7;
-
+$borderColor:#dedede;
+$anchorTagColor: #337ab7;
+$textColor:#5f5f5f;
+$blackText:#4a4a4a;
+$greenColor:#97e169;
+$redColor:#e17e69;
+$yellowColor:#f8e716;
+$btnPrimary: #4a90e2;
+$greyBackgroundColor:#f4f4f4;
 // Font sizes used across website
-
-$largeFont: 36px;
-$mediumFont: 24px;
-$smallFont: 14px;
-$buttonFontSize: 16px;
-
-
+$largeFont: 52px;
+$mediumFont: 22px;
+$smallFont: 12px;
+$buttonFontSize: 14px;
 // Padding and border values
-
 $largePadding:50px;
 $lesspadding:25px;
+$minimumPadding:10px;
 $borderRadius:3px;
-
- // margin
-$marginBottom :10px;
+$boxShadow:0 2px 4px 0 rgba(0, 0, 0, 0.07);

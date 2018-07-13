@@ -1,1 +1,30 @@
 // Side menu specific styles
+.side-menu {
+    background: $whiteColor;
+    padding: $lesspadding;
+    height: 241px;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    ul {
+        padding: 0px;
+        li {
+            font-size: $smallFont + 2;
+            list-style: none;
+            border-bottom: 1px solid $borderColor;
+            padding: 12px 0;
+            &.active,
+            &:hover {
+                a {
+                    color: $primaryColor;
+                }
+            }
+            .mar-top {
+                margin-top: 5px;
+            }
+            a {
+                color: $blackText;
+                text-decoration: none;
+            }
+        }
+    }
+}

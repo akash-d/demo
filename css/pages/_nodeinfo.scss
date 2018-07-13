@@ -1,67 +1,104 @@
-.section2 {
-    background-color: #F0F0F0;
-    padding-bottom: 50px;
-    .heading {
-        h2 {
-            font-size: $mediumFont;
-        }
+.detail-info {
+    p {
+        display: inline-block;
+        width: 50%;
+        font-size: 11px;
+        color: $blackText;
     }
-    .white-box {
-        background-color: $whiteColor;
-        padding: 40px;
-        .left-content {
-            p {
-                color: $blackText;
-                height: 16px;
-                font-size: 11px;
-            }
-        }
-        .right-content {
-            p {
-                height: 16px;
-                font-size: 11px;
-                font-weight: bold;
-            }
-        }
-        .middle-content {
-            h3 {
-                border-bottom: 1px solid #a9a9a9;
-                padding: 10px 0;
-                font-size: 16px;
-                font-weight: bold;
-            }
-            p {
-                display: inline-block;
-                width: 50%;
-                font-size: 11px;
-                color: $blackText;
-            }
-            span {
-                font-size: 11px;
-                font-weight: bold;
-                input {
-                    margin-right: 20px;
-                }
-            }
-        }
-        .status {
-            p {
-                font-size: 10px;
-                margin: 4px 0 0;
-            }
-            span {
-                font-size: 20px;
-                font-weight: bold;
-            }
-        }
-        .grey-box {
-            margin-top: 16px;
-            border: 1px solid $textColor;
-            height: 55px;
-            background-color: $textColor;
-           &.blue{
-            background-color: $anchorTagColor;
-           }
+    span {
+        font-size: 11px;
+        font-weight: bold;
+        input {
+            margin-right: 20px;
         }
     }
 }
+
+.status {
+    p {
+        font-size: 10px;
+        margin: 4px 0 0;
+    }
+    span {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.grey-box {
+    margin-top: 16px;
+    border: 1px solid $textColor;
+    height: 55px;
+    background-color: $textColor;
+    &.blue {
+        background-color: $anchorTagColor;
+    }
+}
+
+// .section2 {
+//     background-color: #F0F0F0;
+//     padding-bottom: 50px;
+//     .heading {
+//         h2 {
+//             font-size: $mediumFont;
+//         }
+//     }
+//     .white-box {
+//         background-color: $whiteColor;
+//         padding: 40px;
+//         .left-content {
+//             p {
+//                 color: $blackText;
+//                 height: 16px;
+//                 font-size: 11px;
+//             }
+//         }
+//         .right-content {
+//             p {
+//                 height: 16px;
+//                 font-size: 11px;
+//                 font-weight: bold;
+//             }
+//         }
+//         .middle-content {
+//             h3 {
+//                 border-bottom: 1px solid #a9a9a9;
+//                 padding: 10px 0;
+//                 font-size: 16px;
+//                 font-weight: bold;
+//             }
+//             p {
+//                 display: inline-block;
+//                 width: 50%;
+//                 font-size: 11px;
+//                 color: $blackText;
+//             }
+//             span {
+//                 font-size: 11px;
+//                 font-weight: bold;
+//                 input {
+//                     margin-right: 20px;
+//                 }
+//             }
+//         }
+//         .status {
+//             p {
+//                 font-size: 10px;
+//                 margin: 4px 0 0;
+//             }
+//             span {
+//                 font-size: 20px;
+//                 font-weight: bold;
+//             }
+//         }
+//         .grey-box {
+//             margin-top: 16px;
+//             border: 1px solid $textColor;
+//             height: 55px;
+//             background-color: $textColor;
+//            &.blue{
+//             background-color: $anchorTagColor;
+//            }
+//         }
+//     }
+// }
