@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
 </head>
 
 <body>
@@ -25,7 +24,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="">Logo</a>
+                    <a class="navbar-brand" href="index.html">Logo</a>
                 </div>
 
                 <!-- Collect tde nav links, forms, and otder content for toggling -->
@@ -61,12 +60,12 @@
                     <div class="box">
                         <ul class="clearfix">
                             <li class="active">
-                                <a href=""> Dashboard
+                                <a href="index.html"> Dashboard
                                     <img class="pull-right mar-top" src="images/play-symbol.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href=""> Cluster
+                                <a href="cluster.html"> Cluster
                                 </a>
                             </li>
                         </ul>
@@ -111,21 +110,27 @@
                                 <div class="graph-box">
                                     <h4>Incoming Network Traffic</h4>
                                     <p>(Bytes/Second)</p>
-                                    <div class="graph"></div>
+                                    <div class="graph">
+                                            <div id="chartContainer2" style="height: 180px; width: 100%;"></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="graph-box">
                                     <h4>Outgoing Network Traffic</h4>
                                     <p>(Bytes/Second)</p>
-                                    <div class="graph"></div>
+                                    <div class="graph">
+                                            <div id="chartContainer3" style="height: 180px; width: 100%;"></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="graph-box">
                                     <h4>Client Connections</h4>
                                     <p>(Total)</p>
-                                    <div class="graph"></div>
+                                    <div class="graph">
+                                            <div id="chartContainer4" style="height: 180px; width: 100%;"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +140,7 @@
                         <div class="graph-query-box">
                             <p>Time ms</p>
                             <div class="graph">
-                                <div id="chartdiv1" style="width: 100%; height: 125px; background-color: #FFFFFF;" ></div>
+                                    <div id="chartContainer1" style="height: 125px; width: 100%;"></div>
                             </div>
                             <div class="export-value">
                                 <p>Queries 113</p>
@@ -231,7 +236,7 @@
                     <div class="deadlock">
                         <h3>Deadlocks</h3>
                         <div class="graph">
-                            <div id="chartdiv"></div>
+                            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
                         </div>
                     </div>
                 </div>
@@ -242,10 +247,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
- 
-    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-    <script src="https://www.amcharts.com/lib/3/serial.js"></script>
-    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 

@@ -25,7 +25,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="">Logo</a>
+                    <a class="navbar-brand" href="index.html">Logo</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -35,7 +35,8 @@
                     <ul class="nav navbar-nav navbar-right">
 
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/user.png" alt="">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/user.png" alt="">
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
@@ -60,12 +61,12 @@
             </div>
             <div class="white-box">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <img src="images/elepahanticon.png" alt="">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <p>Connection Name</p>
                                 <h4>happystry-live</h4>
                                 <div class="row">
@@ -97,30 +98,80 @@
                         </div>
                         <div class="middle-content">
                             <h3>Available Server Features</h3>
-                            <p>Performance Schema:</p><span><input type="radio">Off</span>
-                            <p>Thread Pool:</p><span><input type="radio">n/a</span>
-                            <p>Memcached Plugin:</p><span><input type="radio">n/a</span>
-                            <p>Semisync Replication Plugin: </p><span><input type="radio">n/a</span>
-                            <p>SSL Availability:</p><span><input type="radio">On</span>
+                            <p>Performance Schema:</p>
+                            <span>
+                                <input type="radio">Off</span>
+                            <p>Thread Pool:</p>
+                            <span>
+                                <input type="radio">n/a</span>
+                            <p>Memcached Plugin:</p>
+                            <span>
+                                <input type="radio">n/a</span>
+                            <p>Semisync Replication Plugin: </p>
+                            <span>
+                                <input type="radio">n/a</span>
+                            <p>SSL Availability:</p>
+                            <span>
+                                <input type="radio">On</span>
                         </div>
                         <div class="middle-content">
-                                <h3>Server Directories</h3>
-                                <p>Base Direcctory:</p><span>/rdsdbbin/mysql/</span>
-                                <p>Data Directory:</p><span>/rdsdbbin/db/</span>
-                                <p>Disk Space in Data Dir :</p><span>unable to retrive</span>
-                                <p>InnoDB Data Directory: </p><span>/rdsdbdata/db/innodb</span>
-                                <p>Plugins Directory:</p><span>/rdsdbbin/mysql-5.6.27.R1/lib/plugin/</span>
-                                <p>Tmp Directory:</p><span>/rdsdbdata/tmp/</span>
-                                <p>Error Log:</p><span><input type="radio">On</span>
-                                <p>General Log:</p><span><input type="radio">Off</span>
-                                <p>Slow Query Log:</p><span><input type="radio">Off</span>
-                            </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="graph">
-                            
+                            <h3>Server Directories</h3>
+                            <p>Base Direcctory:</p>
+                            <span>/rdsdbbin/mysql/</span>
+                            <p>Data Directory:</p>
+                            <span>/rdsdbbin/db/</span>
+                            <p>Disk Space in Data Dir :</p>
+                            <span>unable to retrive</span>
+                            <p>Data Directory: </p>
+                            <span>/rdsdbdata/db</span>
+                            <p>Plugins Directory:</p>
+                            <span>/rdsdbbin/mysql-5.6.27.R1/lib/plugin/</span>
+                            <p>Tmp Directory:</p>
+                            <span>/rdsdbdata/tmp/</span>
+                            <p>Error Log:</p>
+                            <span>
+                                <input type="radio">On</span>
+                            <p>General Log:</p>
+                            <span>
+                                <input type="radio">Off</span>
+                            <p>Slow Query Log:</p>
+                            <span>
+                                <input type="radio">Off</span>
                         </div>
-
+                    </div>
+                    <div class="col-md-2">
+                        <img src="images/play-button.png" alt="">
+                        <div class="status">
+                            <p>Server Status</p>
+                            <span>Running</span>
+                        </div>
+                        <div class="grey-box">
+                        </div>
+                        <div class="status">
+                            <p>Traffic</p>
+                            <span>3.22 KB/s</span>
+                        </div>
+                        <div class="grey-box">
+                        </div>
+                        <div class="status">
+                            <p>Selects per Second</p>
+                            <span>0</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div id="chartContainer4" style="height: 78px; width: 100%;"></div>
+                        <div class="grey-box blue">
+                        </div>
+                        <div class="status">
+                            <p>Key Efficiency</p>
+                            <span>96.2%</span>
+                        </div>
+                        <div class="grey-box ">
+                        </div>
+                        <div class="status">
+                            <p>Buffer Usage</p>
+                            <span>2.2%</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -130,6 +181,49 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script>
+        var dps = [];
+    var chart5 = new CanvasJS.Chart("chartContainer4", {
+
+        axisY: {
+            includeZero: false
+        },
+        
+        data: [{
+            type: "line",
+            dataPoints: dps,
+            lineColor: "#56cf1c",
+        }]
+    });
+
+    var xVal = 0;
+    var yVal = 2;
+    var updateInterval = 1500;
+    var dataLength = 50; // number of dataPoints visible at any point
+
+    var updateChart = function (count) {
+        count = count || 1;
+        // count is number of times loop runs to generate random dataPoints.
+        for (var j = 0; j < count; j++) {
+            // yVal +=0.1;
+            dps.push({
+                x: xVal,
+                y: yVal
+            });
+            xVal++;
+        }
+        if (dps.length > dataLength) {
+            dps.shift();
+        }
+        chart5.render();
+    };
+
+    updateChart(dataLength);
+    setInterval(function () {
+        updateChart()
+    }, updateInterval);
+    </script>
 </body>
 
 </html>
