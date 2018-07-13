@@ -1,6 +1,3 @@
-$(".background").click(function () {
-    $(".query-box").addClass("display");
-});
 //canvas chart
 window.onload = function () {
 
@@ -241,4 +238,12 @@ window.onload = function () {
     setInterval(function () {
         updateChart()
     }, updateInterval);
+
+    $('.primary-table tr').click(function(){
+        $('.primary-table tr').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    var minHeight = window.innerHeight -63;
+    $('.section2').css('min-height',minHeight);
 }

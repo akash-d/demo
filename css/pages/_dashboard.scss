@@ -10,10 +10,11 @@
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
             border-radius: 3px;
             p {
-                font-size: 35px;
+                font-size: 52px;
                 color: $whiteColor;
                 display: inline-block;
                 font-weight: bold;
+                margin: 0;
                 span {
                     font-size: 12px;
                     color: $whiteColor;
@@ -22,7 +23,7 @@
             span {
                 font-size: 18px;
                 color: #579034;
-                margin-top: 16px;
+                margin-top: 30px;
             }
         }
         .yellow-box {
@@ -31,10 +32,11 @@
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
             border-radius: 3px;
             p {
-                font-size: 35px;
+                font-size: 52px;
                 color: $whiteColor;
                 display: inline-block;
                 font-weight: bold;
+                margin: 0;
                 span {
                     font-size: 12px;
                     color: $whiteColor;
@@ -43,7 +45,7 @@
             span {
                 font-size: 18px;
                 color: #C1B305;
-                margin-top: 16px;
+                margin-top: 30px;
             }
         }
         .red-box {
@@ -52,10 +54,11 @@
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
             border-radius: 3px;
             p {
-                font-size: 35px;
+                font-size: 52px;
                 color: $whiteColor;
                 display: inline-block;
                 font-weight: bold;
+                margin: 0;
                 span {
                     font-size: 12px;
                     color: $whiteColor;
@@ -64,7 +67,7 @@
             span {
                 font-size: 18px;
                 color: #AC523F;
-                margin-top: 16px;
+                margin-top: 30px;
             }
         }
     }
@@ -138,7 +141,7 @@
                 border: 1px solid #DEDEDE;
                 width: 100%;
                 tr {
-                    &.background:hover {
+                    &.active,&:hover {
                         td {
                             background-color: #DEDEDE;
                             border-right: 1px solid $whiteColor;
@@ -177,18 +180,14 @@
             .query-box {
                 border: 4px solid #5f5f5f;
                 padding: 10px;
-                margin: 15px;
+                margin: 15px 0;
                 background-color: #eaeaea;
-                display: none;
                 p {
                     color: purple;
                     span {
                         color: $blackText;
                     }
                 }
-            }
-            .display {
-                display: block !important;
             }
         }
     }

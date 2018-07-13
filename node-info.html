@@ -183,6 +183,8 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script>
+        var minHeight = window.innerHeight -63;
+    $('.section2').css('min-height',minHeight);
         var dps = [];
     var chart5 = new CanvasJS.Chart("chartContainer4", {
 

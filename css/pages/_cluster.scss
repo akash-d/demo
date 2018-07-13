@@ -3,7 +3,7 @@
     .box {
         background: #fff;
         padding: 30px 25px;
-        height: 200px;
+        height: 241px;
         ul {
             padding: 0px;
             li {
@@ -13,14 +13,19 @@
                 border-bottom: 1px solid #eee;
                 padding: 12px 0;
                 &.active {
-                   a{
-                    color: #ed3f3c
-                   }
+                    a {
+                        color: #ed3f3c
+                    }
+                }
+                &:hover {
+                    a {
+                        color: #ed3f3c
+                    }
                 }
                 .mar-top {
                     margin-top: 5px;
                 }
-                a{
+                a {
                     color: $blackText;
                     text-decoration: none;
                 }
@@ -36,12 +41,12 @@
             border: 1px solid #DEDEDE;
             width: 100%;
             tr {
-                &.background:hover{
+                &.background:hover {
                     td {
-                    background-color: #DEDEDE ;      
-                    border-right: 1px solid $whiteColor;                  
+                        background-color: #DEDEDE;
+                        border-right: 1px solid $whiteColor;
                     }
-                } 
+                }
                 th {
                     border-right: 1px solid #DEDEDE;
                     width: 19%;
