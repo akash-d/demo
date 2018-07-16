@@ -29,8 +29,10 @@ p {
 
 a {
   color: #337ab7;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 14px; }
+  a:hover {
+    color: #d0021b !important; }
 
 span {
   font-size: 12px;
@@ -47,6 +49,9 @@ span {
 
 .section-top-padding {
   padding-top: 20px; }
+
+.pad-btm-40 {
+  padding-bottom: 40px; }
 
 .border-all {
   border: 1px solid #dedede; }
@@ -102,8 +107,11 @@ span {
   width: 100%;
   border: 1px solid #dedede; }
 
-.pad-btm-40 {
-  padding-bottom: 40px; }
+.breadcrumb {
+  margin: 15px 0;
+  background-color: #fff; }
+  .breadcrumb li.active {
+    color: #d0021b; }
 
 .navbar-default {
   background-color: #141414;
