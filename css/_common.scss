@@ -35,8 +35,11 @@ p {
 
 a {
     color: $anchorTagColor;
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: $smallFont + 2;
+    &:hover {
+        color: $primaryColor !important;
+    }
 }
 
 span {
@@ -58,7 +61,11 @@ span {
 }
 
 .section-top-padding {
-    padding-top: $lesspadding;
+    padding-top: $lesspadding - 5;
+}
+
+.pad-btm-40 {
+    padding-bottom: 40px;
 }
 
 // Border and border radius
@@ -112,9 +119,13 @@ span {
     -o-transform: translateY(-50%);
 }
 
+// Light grey background
+
 .light-grey-bg {
     background-color: $greyBackgroundColor;
 }
+
+// White color boxes
 
 .box {
     box-shadow: $boxShadow;
@@ -125,11 +136,19 @@ span {
     }
 }
 
+// Table
+
 .primary-table {
     width: 100%;
     border: 1px solid $borderColor;
 }
 
-.pad-btm-40 {
-    padding-bottom: 40px;
+// Breadcrumb
+
+.breadcrumb {
+    margin: 15px 0;
+    background-color: $whiteColor;
+    li.active {
+        color: $primaryColor;
+    }
 }

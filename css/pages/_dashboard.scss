@@ -37,7 +37,6 @@
 }
 
 .traffic-monitor-holder {
-    margin-top: $lesspadding - 5;
     .box {
         height: 280px;
         h4 {
@@ -51,7 +50,6 @@
 }
 
 .top-query {
-    margin-top: $lesspadding - 5;
     .box {
         .export-value {
             padding: $lesspadding - 5 0;
@@ -130,7 +128,6 @@
 }
 
 .deadlock-holder {
-    margin-top: $lesspadding - 5;
     .graph {
         background-color: $whiteColor;
         padding: $lesspadding;
