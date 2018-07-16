@@ -120,13 +120,11 @@ span {
 }
 
 // Light grey background
-
 .light-grey-bg {
     background-color: $greyBackgroundColor;
 }
 
 // White color boxes
-
 .box {
     box-shadow: $boxShadow;
     border-radius: $borderRadius;
@@ -137,14 +135,34 @@ span {
 }
 
 // Table
-
 .primary-table {
     width: 100%;
     border: 1px solid $borderColor;
+    tr {
+        &.active,
+        &:hover {
+            td {
+                background-color: $borderColor;
+                border-color: $whiteColor;
+                cursor: pointer
+            }
+        }
+        th {
+            border-right: 1px solid $borderColor;
+            padding: $minimumPadding;
+            background: $whiteColor;
+            border-top: 1px solid $borderColor;
+        }
+        td {
+            border-right: 1px solid $borderColor;
+            padding: $minimumPadding;
+            background: $whiteColor;
+            border-top: 1px solid $borderColor;
+        }
+    }
 }
 
 // Breadcrumb
-
 .breadcrumb {
     margin: 15px 0;
     background-color: $whiteColor;

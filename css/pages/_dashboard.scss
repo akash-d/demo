@@ -75,41 +75,23 @@
         }
     }
     .primary-table {
-        tr {
-            &.active,
-            &:hover {
-                td {
-                    background-color: $borderColor;
-                    border-color: $whiteColor;
-                    cursor: pointer
-                }
+        th {
+            width: 12%;
+            &:first-child {
+                width: 8%;
             }
-            th {
-                border-right: 1px solid $borderColor;
-                width: 12%;
-                padding: $minimumPadding;
-                background: $whiteColor;
-                border-top: 1px solid $borderColor;
-                &:first-child {
-                    width: 8%;
-                }
-                &:last-child {
-                    width: 20%;
-                }
+            &:last-child {
+                width: 20%;
             }
-            td {
-                border-right: 1px solid $borderColor;
-                width: 12%;
-                padding: 10px;
-                background: $whiteColor;
-                border-top: 1px solid $borderColor;
-                font-size: 10px;
-                &:first-child {
-                    width: 8%;
-                }
-                &:last-child {
-                    width: 20%;
-                }
+        }
+        td {
+            width: 12%;
+            font-size: $smallFont - 2;
+            &:first-child {
+                width: 8%;
+            }
+            &:last-child {
+                width: 20%;
             }
         }
     }

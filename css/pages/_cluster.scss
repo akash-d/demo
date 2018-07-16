@@ -1,56 +1,38 @@
 .primary-table {
-    tr {
-        &.active,
-        &:hover {
-            td {
-                background-color: $borderColor;
-                border-color: $whiteColor;
-                cursor: pointer
-            }
+    th {
+        width: 19%;
+        &:first-child {
+            width: 6%;
         }
-        th {
-            border-right: 1px solid $borderColor;
-            width: 19%;
-            padding: $minimumPadding;
-            background: $whiteColor;
-            border-top: 1px solid $borderColor;
-            &:first-child {
-                width: 6%;
-            }
+    }
+    td {
+        width: 19%;
+        &:first-child {
+            width: 6%;
         }
-        td {
-            border-right: 1px solid $borderColor;
-            width: 19%;
-            padding: 15px;
-            background: $whiteColor;
-            border-top: 1px solid $borderColor;
-            &:first-child {
-                width: 6%;
+        &.progress-data {
+            width: 100%;
+        }
+        a {
+            color: $blackText;
+            text-decoration: none;
+        }
+        p {
+            width: 116px;
+            height: 10px;
+            border-radius: 20px;
+            margin-left: 10px;
+            &.danger {
+                border: 1px solid $redColor;
+                background-color: $redColor;
             }
-            &.progress-data {
-                width: 100%;
+            &.success {
+                border: 1px solid $greenColor;
+                background-color: $greenColor;
             }
-            a {
-                color: $blackText;
-                text-decoration: none;
-            }
-            p {
-                width: 116px;
-                height: 10px;
-                border-radius: 20px;
-                margin-left: 10px;
-                &.danger {
-                    border: 1px solid $redColor;
-                    background-color: $redColor;
-                }
-                &.success {
-                    border: 1px solid $greenColor;
-                    background-color: $greenColor;
-                }
-                &.warning {
-                    border: 1px solid $yellowColor;
-                    background-color: $yellowColor;
-                }
+            &.warning {
+                border: 1px solid $yellowColor;
+                background-color: $yellowColor;
             }
         }
     }
