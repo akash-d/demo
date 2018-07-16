@@ -275,30 +275,25 @@ span {
       border: 1px solid #f8e716;
       background-color: #f8e716; }
 
-.detail-info p {
+.box h4 {
+  margin: 10px 0; }
+.box .detail-info p {
   display: inline-block;
   width: 50%;
-  font-size: 11px;
+  font-size: 12px;
   color: #4a4a4a; }
-.detail-info span {
-  font-size: 11px;
+.box .detail-info span {
   font-weight: bold; }
-  .detail-info span input {
+  .box .detail-info span input {
     margin-right: 20px; }
-
-.status p {
-  font-size: 10px;
-  margin: 4px 0 0; }
-.status span {
-  font-size: 20px;
-  font-weight: bold; }
-
-.grey-box {
+.box .status-details h4 {
+  margin: 0; }
+.box .grey-box {
   margin-top: 16px;
   border: 1px solid #5f5f5f;
   height: 55px;
   background-color: #5f5f5f; }
-  .grey-box.blue {
+  .box .grey-box.blue {
     background-color: #337ab7; }
 
 /*# sourceMappingURL=style.css.map */

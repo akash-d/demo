@@ -55,10 +55,13 @@
     <section class="light-grey-bg">
         <div class="container">
             <ol class="breadcrumb">
-                <li><a href="cluster.html">Cluster</a></li>
-                <li><a href="nodes.html">Node of CL-1</a></li>
+                <li>
+                    <a href="cluster.html">Cluster</a>
+                </li>
+                <li>
+                    <a href="nodes.html">Node of CL-1</a>
+                </li>
                 <li class="active">Node-info</li>
-
             </ol>
             <h3>Node info (CL-1/N1)</h3>
             <div class="box white-bg">
@@ -73,17 +76,67 @@
                                     <h5>Connection Name</h5>
                                     <h4>happystry-live</h4>
                                     <div class="detail-info">
-                                        <p>Host:<span>ip-10-19-1-239</span></p>
-                                        <p>Socket:<span>/temp/postgre.sock</span></p>
-                                        <p>Port:<span>3306</span></p>
-                                        <p>Version:<span>5.6.27-log<br>Postgre Community Server(GPL)</span></p>
-                                        <p>Copiled For:<span>Linux (x86_64)</span></p>
-                                        <p>Configuration File:<span>unknown</span></p>
-                                        <p>Running Since:<span>Tue Feb 20 17:18:34 2018 (140 days 18:08)</span></p>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <p>Host:</p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <span>ip-10-19-1-239</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <p>Socket:</p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <span>/temp/postgre.sock</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <p>Port:</p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <span>3306</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <p>Version:</p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <span>5.6.27-log Postgre Community Server(GPL)</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <p>Compiled For:</p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <span>Linux (x86_64)</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <p>Configuration file:</p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <span>unknown</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <p>Running since:</p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <span>Tue Feb 20 17:18:34 2018 (140 days 18:08)</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="detail-info">
                             <h3>Available Server Features</h3>
                             <p>Performance Schema:</p>
@@ -127,6 +180,8 @@
                                 <input type="radio">Off</span>
                         </div>
                     </div>
+
+
                     <div class="col-md-2">
                         <div class="node-status">
                             <img src="images/play-button.png" alt="">
@@ -149,7 +204,7 @@
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <div id="chartContainer4" style="height: 78px; width: 100%;"></div>
+                        <div id="chartContainer4" style="height: 72px; width: 100%;"></div>
                         <div class="grey-box blue">
                         </div>
                         <div class="status-details">
