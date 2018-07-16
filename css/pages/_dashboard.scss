@@ -37,7 +37,6 @@
 }
 
 .traffic-monitor-holder {
-    margin-top: $lesspadding - 5;
     .box {
         height: 280px;
         h4 {
@@ -51,7 +50,6 @@
 }
 
 .top-query {
-    margin-top: $lesspadding - 5;
     .box {
         .export-value {
             padding: $lesspadding - 5 0;
@@ -130,197 +128,9 @@
 }
 
 .deadlock-holder {
-    margin-top: $lesspadding - 5;
     .graph {
         background-color: $whiteColor;
         padding: $lesspadding;
     }
 }
 
-// .section2 {
-//     .health {
-//         h3 {
-//             margin: 0 0 12px;
-//             font-weight: bold;
-//         }
-//         .green-box {
-//             background-color: #97E169;
-//         }
-//         .yellow-box {
-//             background-color: #F8E71C;
-//             padding: 20px;
-//             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
-//             border-radius: 3px;
-//             p {
-//                 font-size: 52px;
-//                 color: $whiteColor;
-//                 display: inline-block;
-//                 font-weight: bold;
-//                 margin: 0;
-//                 span {
-//                     font-size: 12px;
-//                     color: $whiteColor;
-//                 }
-//             }
-//             span {
-//                 font-size: 18px;
-//                 color: #C1B305;
-//                 margin-top: 30px;
-//             }
-//         }
-//         .red-box {
-//             background-color: #E17E69;
-//             padding: 20px;
-//             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
-//             border-radius: 3px;
-//             p {
-//                 font-size: 52px;
-//                 color: $whiteColor;
-//                 display: inline-block;
-//                 font-weight: bold;
-//                 margin: 0;
-//                 span {
-//                     font-size: 12px;
-//                     color: $whiteColor;
-//                 }
-//             }
-//             span {
-//                 font-size: 18px;
-//                 color: #AC523F;
-//                 margin-top: 30px;
-//             }
-//         }
-//     }
-//     .traffic-monitor {
-//         h3 {
-//             margin: 15px 0;
-//             font-weight: bold;
-//         }
-//         .graph-box {
-//             background-color: $whiteColor;
-//             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
-//             border-radius: 3px;
-//             padding: 20px;
-//             height: 280px;
-//             h4 {
-//                 font-size: 16px;
-//                 color: $blackText;
-//                 margin: 2px 0;
-//             }
-//             p {
-//                 font-size: 12px;
-//                 color: $textColor;
-//             }
-//         }
-//     }
-//     .top-query {
-//         h3 {
-//             margin: 15px 0;
-//             font-weight: bold;
-//         }
-//         .graph-query-box {
-//             background-color: $whiteColor;
-//             padding: 25px;
-//             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
-//             border-radius: 3px;
-//             p {
-//                 font-size: 14px;
-//                 color: $blackText;
-//                 font-weight: bold;
-//             }
-//             .graph {
-//                 height: 120px;
-//             }
-//             .export-value {
-//                 padding: 15px 0;
-//                 p {
-//                     display: inline-block;
-//                     font-size: 20px;
-//                     color: $blackText;
-//                 }
-//                 span {
-//                     font-size: 14px;
-//                     margin: 0 5px;
-//                     font-weight: bold;
-//                     &.green {
-//                         color: #5EB22A;
-//                     }
-//                     &.blue {
-//                         color: #4A90E2;
-//                     }
-//                 }
-//                 .btn-default {
-//                     border: 1px solid $primaryblue;
-//                     color: $primaryblue;
-//                     &:hover {
-//                         background-color: $whiteColor;
-//                     }
-//                 }
-//             }
-//             table {
-//                 border: 1px solid #DEDEDE;
-//                 width: 100%;
-//                 tr {
-//                     &.active,
-//                     &:hover {
-//                         td {
-//                             background-color: #DEDEDE;
-//                             border-right: 1px solid $whiteColor;
-//                             cursor: pointer
-//                         }
-//                     }
-//                     th {
-//                         border-right: 1px solid #DEDEDE;
-//                         width: 12%;
-//                         padding: 10px;
-//                         background: $whiteColor;
-//                         border-top: 1px solid #DEDEDE;
-//                         &:first-child {
-//                             width: 8%;
-//                         }
-//                         &:last-child {
-//                             width: 20%;
-//                         }
-//                     }
-//                     td {
-//                         border-right: 1px solid #DEDEDE;
-//                         width: 12%;
-//                         padding: 10px;
-//                         background: $whiteColor;
-//                         border-top: 1px solid #DEDEDE;
-//                         font-size: 10px;
-//                         &:first-child {
-//                             width: 8%;
-//                         }
-//                         &:last-child {
-//                             width: 20%;
-//                         }
-//                     }
-//                 }
-//             }
-//             .query-box {
-//                 border: 4px solid #5f5f5f;
-//                 padding: 10px;
-//                 margin: 15px 0;
-//                 background-color: #eaeaea;
-//                 p {
-//                     color: purple;
-//                     span {
-//                         color: $blackText;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//     .deadlock {
-//         h3 {
-//             margin: 15px 0;
-//             font-weight: bold;
-//         }
-//         .graph {
-//             background-color: $whiteColor;
-//             height: 350px;
-//             padding: 20px;
-//         }
-//     }
-// }
