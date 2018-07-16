@@ -5,4 +5,11 @@
     &.navbar {
         margin-bottom: 0;
     }
+    .profile-type {
+        a {
+            padding-top: $lesspadding - 2;
+            font-weight: 700;
+            color: $blackText !important;
+        }
+    }
 }

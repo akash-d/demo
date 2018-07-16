@@ -133,6 +133,10 @@ span {
   border-radius: 0; }
   .navbar-default.navbar {
     margin-bottom: 0; }
+  .navbar-default .profile-type a {
+    padding-top: 23px;
+    font-weight: 700;
+    color: #4a4a4a !important; }
 
 .side-menu {
   background: #fff;
